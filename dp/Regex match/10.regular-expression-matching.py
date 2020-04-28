@@ -20,7 +20,7 @@ class Solution:
                     return helper(i,j-2)
                 else:
                     return False
-            # same char or p[j] is '.' -> move to right
+            # same char or p[j] is '.' -> move to left
             if s[i] == p[j] or p[j] == '.':
                 return helper(i-1,j-1)
             elif p[j] == '*' and j >= 1:
